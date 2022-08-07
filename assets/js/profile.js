@@ -16,8 +16,8 @@ function userdata() {
         RealUser.style.display = 'block'
         RealUser.setAttribute('src', Userphoto);
     } else {
-        FakeUser.style.displa = 'block'
-        RealUser.style.displa = 'none'
+        FakeUser.style.display = 'block'
+        RealUser.style.display = 'none'
     }
     name.innerHTML = UserName
     email.innerHTML = UserEmail
