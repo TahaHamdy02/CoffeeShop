@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==================== ICON ====================-->
+    <link rel="shortcut icon" href="img/favicon/newuser.ico" type="image/x-icon">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="css/form__style.css">
+    <!--==================== BOOTSTARB CSS ====================-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>SignUp</title>
+</head>
+
+<body>
+    <!--==================== Main ====================-->
+    <section class="main signup">
+        <div class="img-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                    <div class="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
+                        <div class="card-body p-4 p-sm-5">
+                            <h2 class="card-title text-center mb-5 fw-bold fs-2">Register</h2>
+                            <form action="login.html" method="get" id="form">
+
+                                <div class="form-floating mb-3">
+
+                                    <input type="text" class="form-control" id="floatingInputUsername" placeholder="myusername" required autofocus>
+                                    <label for="floatingInputUsername">Username</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+
+                                    <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com" required>
+                                    <label for="floatingInputEmail">Email address</label>
+                                </div>
+
+                                <hr>
+
+                                <div class="form-floating mb-3">
+
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required minlength="8" maxlength="20">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+
+                                    <input type="password" class="form-control" id="floatingPasswordConfirm" placeholder="Confirm Password" required minlength="8" maxlength="20">
+                                    <label for="floatingPasswordConfirm">Confirm Password</label>
+                                </div>
+                                <div class="form-floating mb-3"><input type="checkbox" onclick="ShowPassword()">Show Password</div>
+                                <div class="d-grid mb-2">
+                                    <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" id="Register-btn" type="submit">Register</button>
+                                </div>
+
+                                <a class="d-block text-center mt-2 small" href="login.html">Have an account? Sign In</a>
+
+                                <hr class="my-4">
+
+                                <div class="d-grid mb-2">
+                                    <button class="btn btn-lg btn-google btn-login fw-light text-uppercase" type="submit">
+                                        <i class="uil uil-google me-2"></i> Sign up with Google
+                        </button>
+                                </div>
+
+                                <div class="d-grid">
+                                    <button class="btn btn-lg btn-facebook btn-login fw-light text-uppercase" type="submit">
+                                        <i class="uil uil-facebook-f me-2"></i> Sign up with Facebook
+                        </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==================== js ====================-->
+    <script src="js/signup.js"></script>
+
+</body>
+
+</html>

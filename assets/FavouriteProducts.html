@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==================== ICON ====================-->
+    <link rel="shortcut icon" href="img/favicon/fav.ico" type="image/x-icon">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Favourite Products</title>
+
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header d-flex" id="header">
+            <a href="../index.html" class="logo">
+                <img src="img/logo.png" alt="...">
+            </a>
+            <!-- nav -->
+            <nav class="nav d-flex">
+                <li><a href="../index.html" class="nav__link">Home</a></li>
+                <li><a href="cart.html" class="nav__link">My products</a></li>
+                <li style="display: none;"><a href="#" class="drop nav__link">Products<i class="uil uil-angle-down" id="down"></i></a>
+                    <ul class="products__dropdown">
+                        <li class="dropdown__link"><a href="../index.html">Nespresso Machine</a></li>
+                        <li class="dropdown__link"><a href="../index.html">Coffee Beans</a></li>
+                        <li class="dropdown__link"><a href="../index.html">Via Instant</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Contact" class="nav__link">Contact</a></li>
+            </nav>
+            <!-- icons -->
+            <div class="icons d-flex">
+                <!-- search -->
+                <div class="search" id="search"><span class="search__icon" id="search__icon"><i class="uil uil-search"></i></span>
+                    <div class="search__form d-flex" id="search__form">
+                        <input type="search" id="search__box" class="search__box" placeholder="search here...">
+                        <label for="search__box" class="uil uil-search"></label>
+                    </div>
+                </div>
+                <!-- cart -->
+                <div class="cart" id="cart" style="display: none;"><span class="cart__icon" id="cart__icon"><i class="uil uil-shopping-cart-alt"></i></span>
+                    <div class="cart__items" id="cart__items">
+                        <div class="products" id="products">
+                        </div>
+                    </div>
+                </div>
+                <!-- profile -->
+                <div class="personal">
+                    <span id="profile__none"></span><i class="uil uil-user-circle"></i>
+                    <img src=" " alt="..." id="profile__ex">
+                    <div class="personal__profile">
+                        <ul class="profile__user1">
+                            <li>
+                                <a href="profile.html" id="user__name" class="user__name"></a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="#" id="user__logout" class="user__logout d-flex">Logout<i class="uil uil-user-minus"></i></a>
+                            </li>
+                        </ul>
+                        <ul class="profile__user2">
+                            <li>
+                                <a href="login.html" id="user__signup" class="d-flex">Signup<i class="uil uil-user-plus"></i></a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="signup.html" id="user__signin" class="d-flex">Signin<i class="uil uil-user"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- small sereen menu -->
+                <span id="menu__btn"><i class="uil uil-align-right"></i></span>
+            </div>
+        </header>
+        <!--==================== MAIN ====================-->
+        <div class="favourite__continer">
+            <div class="filter" id="filter">
+                <h2>Favourite products <span id="all"></span></h2>
+            </div>
+            <div class="favourite__products d-flex-wrap width__center">
+
+            </div>
+            <div class="empty__card" id="empty__card">
+                <h2 class="empty__card__title">Add Somthing</h2>
+                <img src="img/favicon/empty-fav.png" alt="empty cart" draggable="false"></div>
+        </div>
+
+        <script src="js/FavouriteProducts.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>

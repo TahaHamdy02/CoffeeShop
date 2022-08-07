@@ -1,0 +1,317 @@
+        /*==================== GOOGLE FONTS ====================*/
+        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;500;700&display=swap');
+        /*==================== VARIABLES CSS ====================*/
+        
+         :root {
+            --header-height: 6rem;
+            /*========== Colors ==========*/
+            --first-color: #d3ad7e;
+            --first-color-second: #13131b;
+            --title-color: #f5f5f5;
+            --title-color-second: #d3ad7e;
+            --text-color: #cccccc;
+            --text-color-light: : #f4f4f4;
+            --main-color-alt: #f4f4f4;
+            --main-color-second: #ff5c81;
+            --btn-color: #7848f4;
+            --body-color: #010104;
+            --container-color: ;
+            /*========== Font and typography ==========*/
+            --body-font: 'Roboto Mono', monospace;
+            ;
+            /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+            --text-font-size: 2rem;
+            --big-font-size: 3rem;
+            --h1-font-size: 2.2rem;
+            --h2-font-size: 1.5rem;
+            --h3-font-size: 1.25rem;
+            --normal-font-size: 1rem;
+            --small-font-size: .87rem;
+            --smaller-font-size: .813rem;
+            /*========== Font weight ==========*/
+            --font-thin: 100;
+            --font-semi-medium: 400;
+            --font-medium: 500;
+            --font-semi-bold: 600;
+            --font-bold: 700;
+            /*========== border ==========*/
+            --static-border: .15rem solid var(--first-color);
+            /*========== Margenes Bottom ==========*/
+            /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+            --mb-0-25: .25rem;
+            --mb-0-5: .5rem;
+            --mb-0-75: .75rem;
+            --mb-1: 1rem;
+            --mb-1-5: 1.5rem;
+            --mb-2: 2rem;
+            --mb-2-5: 2.5rem;
+            --mb-3: 3rem;
+            /*========== z index ==========*/
+            --z-tooltip: 10;
+            --z-fixed: 100;
+            --z-modal: 1000;
+        }
+        /* Font size for large devices */
+        
+        @media screen and (max-width: 968px) {
+             :root {
+                /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+                --text-font-size: 2rem;
+                --big-font-size: 2rem;
+                --h1-font-size: 1.8rem;
+                --h2-font-size: 1.25rem;
+                --h3-font-size: 1.125rem;
+                --normal-font-size: .938rem;
+                --small-font-size: .813rem;
+                --smaller-font-size: .75rem;
+            }
+        }
+        /*==================== BASE ====================*/
+        
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            transition: all .3s;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            /* margin: var(--header-height) 0 0; */
+            font-family: var(--body-font);
+            font-size: var(--normal-font-size);
+            background-color: var(--body-color);
+            color: var(--text-color);
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .d-none {
+            display: none;
+        }
+        
+        .d-block {
+            display: block;
+        }
+        /*--==================== profile card ====================--*/
+        
+        .main__conteiner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+        }
+        
+        .profile__card {
+            width: 350px;
+            margin: auto;
+            padding: var(--mb-1-5);
+            background: rgb(239 187 187 / 0%);
+            box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+            backdrop-filter: blur( 10px);
+            -webkit-backdrop-filter: blur( 8px);
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18);
+            min-width: 340px;
+            text-align: left;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+        
+        .card__user__imgs {
+            display: flex;
+            justify-content: space-between;
+            /* margin: auto; */
+        }
+        
+        .profile__form i,
+        .card__user__imgs i {
+            cursor: pointer;
+            font-size: var(--h2-font-size);
+            color: var(--main-color-alt);
+        }
+        
+        .card__conteiner img {
+            margin-left: 0;
+            border: var(--static-border);
+            width: 7rem;
+            height: 7rem;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        
+        .data label {
+            font-size: var(--h3-font-size);
+            color: var(--main-color-alt);
+            margin-bottom: var(--mb-0-5);
+        }
+        
+        .data div {
+            margin: var(--mb-0-5) 0;
+        }
+        
+        .data p {
+            padding-left: var(--mb-0-25);
+            font-size: var(--h3-font-size);
+            color: var(--title-color-second);
+        }
+        /*--==================== Edit profile card ====================--*/
+        
+        .main {
+            width: 100%;
+            height: 100vh;
+            background: url(../img/profile.png) no-repeat center;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .edit__profile {
+            padding: var(--mb-1-5) var(--mb-2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+            margin: auto;
+        }
+        
+        .profile__form h2 {
+            text-align: center;
+            margin: var(--mb-1);
+        }
+        
+        .edit__profile__img {
+            margin-right: var(--mb-1-5);
+            width: 35%;
+        }
+        
+        .fake__img,
+        .real__img {
+            width: 8rem;
+            height: 8rem;
+            margin: auto;
+        }
+        
+        .fake__img img,
+        .real__img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        
+        .upload__photo {
+            margin-top: var(--mb-1-5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 32px;
+            line-height: 52px;
+            background: var(--first-color-second);
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        
+        .upload__photo input {
+            border: none;
+            outline: none;
+            padding-left: 10px;
+            font-size: 13px;
+            color: var(--first-color);
+            width: 75%;
+        }
+        
+        .upload__photo ::-webkit-file-upload-button {
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 13px;
+            color: #FFF;
+            background: var(--first-color);
+            width: 40%;
+            text-align: center
+        }
+        
+        .profile__form {
+            padding: var(--mb-1-5) var(--mb-2);
+            width: 75%;
+            background-color: rgb(22, 22, 29);
+        }
+        
+        .two-row {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .two-row :nth-child(1),
+        .two-row :nth-child(2) {
+            width: 98%;
+        }
+        
+        .labels {
+            padding-left: var(--mb-0-25);
+            margin-bottom: var(--mb-0-5);
+            display: block;
+        }
+        
+        .profile__form input {
+            width: 100%;
+            outline: none;
+            padding-left: var(--mb-0-5);
+            border: 1px solid rgb(11, 12, 16);
+            color: var(--text-color-light);
+            font-size: 16px;
+            height: 40px;
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: transparent;
+        }
+        
+        .edit__profile__btn {
+            display: block;
+            cursor: pointer;
+            background: transparent;
+            margin: var(--mb-1) auto;
+            border-radius: var(--mb-0-25);
+            border: .1rem solid rgb(11, 12, 16);
+            color: var(--first-color);
+            font-size: 1rem;
+            padding: var(--mb-0-5) var(--mb-0-75);
+            -webkit-border-radius: var(--mb-0-25);
+            -moz-border-radius: var(--mb-0-25);
+            -ms-border-radius: var(--mb-0-25);
+            -o-border-radius: var(--mb-0-25);
+        }

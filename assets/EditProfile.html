@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==================== ICON ====================-->
+    <link rel="shortcut icon" href="img/favicon/user.ico" type="image/x-icon">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--==================== CSS ====================-->
+    <!-- <link rel="stylesheet" href="./assets/css/profile.css"> -->
+    <link rel="stylesheet" href="css/profile.css">
+
+    <title>Edit Profile</title>
+
+    <body>
+        <div class="edit__profile">
+            <div class="edit__profile__img">
+                <div class="fake__img"><img src="img/fakeUser.jpg" alt="fake photo" draggable="false"></div>
+                <div class="real__img" style="display: none;"><img src="" alt="real user" id="new__user__photo__preivew"></div>
+                <div class="upload__photo" id="edit__photo"><input type="file" accept="image/*" id="edit__user__photo"> </div>
+            </div>
+            <form class="profile__form" method="post"><span><a href="profile.html"><i class="uil uil-step-backward"></i></a></span>
+                <h2>Profile Settings</h2>
+                <div class="two-row">
+                    <div><label class="labels">Name</label><input type="text" id="firstname" placeholder="first name" class="form-control"></div>
+                    <div><label class="labels">SurName</label><input type="text" id="surname" placeholder="surname" class="form-control"></div>
+                </div>
+                <div class="one-row">
+                    <div><label class="labels">Number</label><input type="text" id="phoneNumber" placeholder="phone Number"></div>
+                    <div><label class="labels">address line 1</label><input type="text" id="addressline1" placeholder="address line 1"></div>
+                    <div><label class="labels">address line 2</label><input type="text" id="addressline2" placeholder="address line 2"></div>
+                    <div><label class="labels">post code</label><input type="text" id="postcode" placeholder="post code"></div>
+                    <div><label class="labels">Area</label><input type="text" id="Area" placeholder="Area"></div>
+                    <div><label class="labels">Email</label><input type="email" id="Email" placeholder="Email"></div>
+                </div>
+                <div class="two-row">
+                    <div><label class="labels">Country</label><input type="text" id="country" placeholder="country"></div>
+                    <div><label class="labels">state/region</label><input type="text" id="region" placeholder="region"></div>
+                </div>
+                <button type="submit" class="edit__profile__btn">Save changes</button>
+            </form>
+        </div>
+        <script src="js/EditProfile.js"></script>
+    </body>
+
+</html>

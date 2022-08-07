@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==================== ICON ====================-->
+    <link rel="shortcut icon" href="img/favicon/contact.ico" type="image/x-icon">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>CONTACT US</title>
+</head>
+
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header d-flex" id="header">
+        <a href="../index.html" class="logo">
+            <img src="img/logo.png" alt="...">
+        </a>
+        <!-- nav -->
+        <nav class="nav d-flex">
+            <li><a href="../index.html" class="nav__link">Home</a></li>
+            <li><a href="cart.html" class="nav__link">My products</a></li>
+            <li><a href="#" class="drop nav__link">Products<i class="uil uil-angle-down" id="down"></i></a>
+                <ul class="products__dropdown">
+                    <li class="dropdown__link"><a href="../index.html">Nespresso Machine</a></li>
+                    <li class="dropdown__link"><a href="../index.html">Coffee Beans</a></li>
+                    <li class="dropdown__link"><a href="../index.html">Via Instant</a></li>
+                </ul>
+            </li>
+            <li><a href="FavouriteProducts.html" class="fav">favourite
+                <span>
+                    <svg class="favourite" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 472.7 472.7" style="enable-background:new 0 0 472.7 472.7;" xml:space="preserve">
+                        <g>
+                        <path class="wfavourite" id="XMLID_810_" d="M433.5,67c-25.3-25.3-59-39.3-94.8-39.3s-69.6,14-94.9,39.4l-7.3,7.3l-7.5-7.5
+                       c-25.4-25.4-59.1-39.4-95-39.4c-35.8,0-69.4,13.9-94.7,39.3C13.9,92.2,0,125.9,0,161.7s14,69.5,39.4,94.8l182.7,182.7
+                       c3.8,3.8,9,6,14.5,6c5.4,0,10.6-2.2,14.5-6l182.2-182.4c25.4-25.4,39.3-59.1,39.4-94.9S458.8,92.4,433.5,67z M132.5,117.2
+                       c-23.9,0-43.4,19.5-43.4,43.4c0,11-8.9,19.9-19.9,19.9s-19.9-8.9-19.9-19.9c0-45.8,37.3-83.1,83.1-83.1c11,0,19.9,8.9,19.9,19.9
+                       C152.4,108.4,143.5,117.2,132.5,117.2z"/>
+                        </g> 
+                   </svg>
+                </span>
+              </a>
+            </li>
+        </nav>
+        <!-- icons -->
+        <div class="icons d-flex">
+            <!-- search -->
+            <div class="search" id="search"><span class="search__icon" id="search__icon"><i class="uil uil-search"></i></span>
+                <div class="search__form d-flex" id="search__form">
+                    <input type="search" id="search__box" class="search__box" placeholder="search here...">
+                    <label for="search__box" class="uil uil-search"></label>
+                </div>
+            </div>
+            <!-- cart -->
+            <div class="cart" id="cart" style="display: none;"><span class="cart__icon" id="cart__icon"><i class="uil uil-shopping-cart-alt"></i></span>
+                <div class="cart__items" id="cart__items">
+                    <div class="products" id="products">
+                    </div>
+                </div>
+            </div>
+            <!-- profile -->
+            <div class="personal">
+                <span id="profile__none"></span><i class="uil uil-user-circle"></i>
+                <img src=" " alt="..." id="profile__ex">
+                <div class="personal__profile">
+                    <ul class="profile__user1">
+                        <li>
+                            <a href="profile.html" id="user__name" class="user__name"></a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="#" id="user__logout" class="user__logout d-flex">Logout<i class="uil uil-user-minus"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="profile__user2">
+                        <li>
+                            <a href="login.html" id="user__signup" class="d-flex">Signup<i class="uil uil-user-plus"></i></a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="signup.html" id="user__signin" class="d-flex">Signin<i class="uil uil-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- small sereen menu -->
+            <span id="menu__btn"><i class="uil uil-align-right"></i></span>
+        </div>
+    </header>
+    <!--==================== MAIN ====================-->
+    <div class="contact">
+        <div class="thanks">
+            <span class="close"><i class="uil uil-multiply"></i></span>
+            <h3 class="font-h3 thanks__title"> thanks for your feedback</h3>
+            <p>Hello, <span class="agent-name"></span></p>
+            <p> Thank you for your valuable feedback. We are thrilled that you had such a great and meaningful experience with <span class="agent-name"></span>. We all take great pride in our work, and our sincerest hope is that it helps each one of our customers
+                accomplish their goals. Your feedback has demonstrated that it does, and we appreciate you letting us know. </p>
+
+            <p> To really show our appreciation, we’ve included the following coupon code:<span class="coupon-code"></span>. Please use it to enjoy more of our products or services at your convenience. We’d love to hear from you again! If you use our products
+                or services in the future and would like to leave more feedback, please contact us anytime between the hours of 9AM-5PM, Monday-Friday.
+            </p>
+            <p> Have a wonderful day! Kind regards, <span class="agent-name"></span>
+            </p>
+        </div>
+        <div class="contact-form-info width__center d-flex-wrap">
+            <form action="" method="post" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" class="inputs" placeholder="Name" required autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="inputs" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" class="inputs" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="Message" cols="30" rows="10" class="inputs" placeholder="Message" required style="height: 170px;"></textarea>
+                </div>
+                <button type="submit" class="form-btn"><span><i class="uil uil-message"></i></span> Send
+                    Message</button>
+            </form>
+            <div class="contact-info">
+                <h4 class="contact-info-title font-h2">Let's talk about everything!</h4>
+                <p class="contact-info-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia perspiciatis adipisci veritatis suscipit soluta earum officiis odio. Tempora quibusdam quas dolorem in, iure iusto, necessitatibus tenetur quos, consectetur quis doloribus.</p>
+                <div class="contact-ci">
+                    <p>phone:</p>
+                    <p class="contact-i"><i class="uil uil-phone-alt"></i><a href="tel:+02114911898">+20 1114911898</a> </p>
+                </div>
+                <div class="contact-ci">
+                    <p>Email:</p>
+                    <p class="contact-i"> <span><i class="uil uil-envelope"></i></span>
+                        <a href="mailto:tahahamdy34@gmail.com">tahahamdy34@gmail.com</a>
+                    </p>
+                </div>
+                <div class="contact-ci">
+                    <p>Adress:</p>
+                    <p class="contact-i"> <span><i class="uil uil-location-point"></i></span> Egypt st Alex</p>
+                </div>
+                <div class="contact-ci">
+                    <p>What's app:</p>
+                    <p class="contact-i"> <span><i class="uil uil-whatsapp"></i></span><a href="tel:+02114911898">+20 1114911898</a> </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__content width__center d-flex-wrap">
+            <div class="footer__info">
+                <img src="img/logo.png" alt="logo" class="logo">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nobis dolor sed, quae error corrupti iure ad at recusandae, quod illo nihil eligendi veritatis magni ipsa voluptas quidem? Voluptate, similique?
+                </p>
+                <div class="footer__social__links">
+                    <a href="#"><img class="social__links" src="img/facebook.png" alt="facebook"></a>
+                    <a href="#"><img class="social__links" src="img/twitter .png" alt="twitter"></a>
+                    <a href="#"><img class="social__links" src="img/instagram.png" alt="instagram"></a>
+                    <a href="#"><img class="social__links" src="img/location.png" alt="location"></a>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <h2 class="footer__title">ContactUs</h2>
+                <div class="contact-ci">
+                    <p>phone:</p>
+                    <p class="contact-i"><i class="uil uil-phone-alt"></i><a href="tel:+02114911898">+20 1114911898</a> </p>
+                </div>
+                <div class="contact-ci">
+                    <p>Adress:</p>
+                    <p class="contact-i"> <span><i class="uil uil-location-point"></i></span> Egypt st Alex</p>
+                </div>
+            </div>
+            <div class="footer__Subscribe">
+                <h2 class="footer__title">Subscribe</h2>
+                <form class="Subscribe">
+                    <input type="email" placeholder="input your email">
+                    <a href="#">Subscribe</a>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let ContactForm = document.querySelector('.contact-form'),
+            thanks = document.querySelector('.thanks'),
+            input = document.querySelectorAll('form-group input')
+        close = document.querySelector('.close i');
+        ContactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            thanks.classList.add('show-feedback')
+        });
+        close.addEventListener('click', () => {
+            thanks.classList.remove('show-feedback')
+            setTimeout(() => {
+                window.location = "contact.html"
+            }, 500)
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

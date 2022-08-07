@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==================== ICON ====================-->
+    <link rel="shortcut icon" href="img/favicon/productinfo.ico" type="image/x-icon">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Product Page</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header d-flex" id="header">
+        <a href="../index.html" class="logo">
+            <img src="img/logo.png" alt="...">
+        </a>
+        <!-- nav -->
+        <nav class="nav d-flex">
+            <li><a href="../index.html" class="nav__link">Home</a></li>
+            <li><a href="#Products" class="drop nav__link">Products<i class="uil uil-angle-down" id="down"></i></a>
+                <ul class="products__dropdown">
+                    <li class="dropdown__link"><a href="../index.html">Nespresso Machine</a></li>
+                    <li class="dropdown__link"><a href="../index.html">Coffee Beans</a></li>
+                    <li class="dropdown__link"><a href="../index.html">Via Instant</a></li>
+                </ul>
+            </li>
+            <li><a href="assets/FavouriteProducts.html" class="fav">favourite
+            <span>
+                <svg class="favourite" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 472.7 472.7" style="enable-background:new 0 0 472.7 472.7;" xml:space="preserve">
+                    <g>
+                    <path class="wfavourite" id="XMLID_810_" d="M433.5,67c-25.3-25.3-59-39.3-94.8-39.3s-69.6,14-94.9,39.4l-7.3,7.3l-7.5-7.5
+                   c-25.4-25.4-59.1-39.4-95-39.4c-35.8,0-69.4,13.9-94.7,39.3C13.9,92.2,0,125.9,0,161.7s14,69.5,39.4,94.8l182.7,182.7
+                   c3.8,3.8,9,6,14.5,6c5.4,0,10.6-2.2,14.5-6l182.2-182.4c25.4-25.4,39.3-59.1,39.4-94.9S458.8,92.4,433.5,67z M132.5,117.2
+                   c-23.9,0-43.4,19.5-43.4,43.4c0,11-8.9,19.9-19.9,19.9s-19.9-8.9-19.9-19.9c0-45.8,37.3-83.1,83.1-83.1c11,0,19.9,8.9,19.9,19.9
+                   C152.4,108.4,143.5,117.2,132.5,117.2z"/>
+                    </g> 
+               </svg>
+            </span>
+          </a>
+            </li>
+        </nav>
+        <!-- icons -->
+        <div class="icons d-flex">
+            <!-- search -->
+            <div class="search" id="search"><span class="search__icon" id="search__icon"><i class="uil uil-search"></i></span>
+                <div class="search__form d-flex" id="search__form">
+                    <input type="search" id="search__box" class="search__box" placeholder="search here...">
+                    <label for="search__box" class="uil uil-search"></label>
+                </div>
+            </div>
+            <!-- cart -->
+            <div class="cart" id="cart"><span class="cart__icon" id="cart__icon"><i class="uil uil-shopping-cart-alt"></i></span>
+                <div class="cart__items" id="cart__items">
+                    <div class="products" id="products">
+                    </div>
+                </div>
+            </div>
+            <!-- profile -->
+            <div class="personal">
+                <span id="profile__none"></span><i class="uil uil-user-circle"></i>
+                <img src=" " alt="..." id="profile__ex">
+                <div class="personal__profile">
+                    <ul class="profile__user1">
+                        <li>
+                            <a href="profile.html" id="user__name" class="user__name"></a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="#" id="user__logout" class="user__logout d-flex">Logout<i class="uil uil-user-minus"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="profile__user2">
+                        <li>
+                            <a href="login.html" id="user__signup" class="d-flex">Signup<i class="uil uil-user-plus"></i></a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="signup.html" id="user__signin" class="d-flex">Signin<i class="uil uil-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- small sereen menu -->
+            <span id="menu__btn"><i class="uil uil-align-right"></i></span>
+        </div>
+    </header>
+    <!--==================== MAIN ====================-->
+    <div class="product">
+
+    </div>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__content width__center d-flex-wrap">
+            <div class="footer__info">
+                <img src="img/logo.png" alt="logo" class="logo">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nobis dolor sed, quae error corrupti iure ad at recusandae, quod illo nihil eligendi veritatis magni ipsa voluptas quidem? Voluptate, similique?
+                </p>
+                <div class="footer__social__links">
+                    <a href="#"><img class="social__links" src="img/facebook.png" alt="facebook"></a>
+                    <a href="#"><img class="social__links" src="img/twitter .png" alt="twitter"></a>
+                    <a href="#"><img class="social__links" src="img/instagram.png" alt="instagram"></a>
+                    <a href="#"><img class="social__links" src="img/location.png" alt="location"></a>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <h2 class="footer__title">ContactUs</h2>
+                <div class="contact-ci">
+                    <p>phone:</p>
+                    <p class="contact-i"><i class="uil uil-phone-alt"></i><a href="tel:+02114911898">+20 1114911898</a> </p>
+                </div>
+                <div class="contact-ci">
+                    <p>Adress:</p>
+                    <p class="contact-i"> <span><i class="uil uil-location-point"></i></span> Egypt st Alex</p>
+                </div>
+            </div>
+            <div class="footer__Subscribe">
+                <h2 class="footer__title">Subscribe</h2>
+                <form class="Subscribe">
+                    <input type="email" placeholder="input your email">
+                    <a href="#">Subscribe</a>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="js/productpage.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

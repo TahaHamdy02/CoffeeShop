@@ -1,0 +1,7 @@
+{
+    "editor.cursorBlinking": "smooth",
+    "editor.quickSuggestionsDelay": 2,
+    "screencastMode.keyboardOverlayTimeout": 5000,
+    "color-highlight.matchRgbWithNoFunction": true,
+    "color-highlight.matchWords": true
+}
