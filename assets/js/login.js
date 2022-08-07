@@ -20,3 +20,12 @@ form.addEventListener('submit', (e) => {
         password.setCustomValidity("wrong password");
     }
 })
+function ShowPassword() {
+    let password = document.querySelector('#floatingPassword');
+
+    if (password.type === "password") {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
+}
