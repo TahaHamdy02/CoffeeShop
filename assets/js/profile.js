@@ -10,7 +10,6 @@ let name = document.querySelector('#card__user__name'),
     UserEmail = localStorage.getItem("email"),
     UserRegion = localStorage.getItem("NewRegion");
 
-
 function userdata() {
     if (Userphoto) {
         FakeUser.style.display = 'none'
